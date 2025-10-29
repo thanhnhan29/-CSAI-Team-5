@@ -16,7 +16,6 @@ class ACO:
         self.best_route = None
         self.best_reward = -1 * np.inf
         
-        # Default functions for TSP if not provided
         self.compute_reward = compute_reward if compute_reward else self._default_tsp_reward
         self.stop_condition = stop_condition if stop_condition else self._default_tsp_stop_condition
     
@@ -36,7 +35,7 @@ class ACO:
         for ant in ants:
             for i in range(len(ant.route) - 1):
                 a, b = ant.route[i], ant.route[i + 1]
-                delta = abs(ant.reward)  # Use absolute value for pheromone update
+                delta = abs(ant.reward)
                 self.pheromone[a][b] += delta
                 self.pheromone[b][a] += delta
 

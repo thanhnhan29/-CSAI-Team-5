@@ -9,12 +9,12 @@ def run_knapsack_aco():
     kp = KP(num=num_items, capacity=capacity, nmax=100, nmin=1, seed=42)
     kp.set_init()
     
-    print(f"📦 Knapsack Problem: {num_items} items, capacity = {capacity}")
+    print(f"Knapsack Problem: {num_items} items, capacity = {capacity}")
     print(f"Weights: {kp.weights[:10]}... (showing first 10)")
     print(f"Values: {kp.values[:10]}... (showing first 10)")
     
     optimal_value = kp.solve()
-    print(f"\n🎯 Optimal value (DP): {optimal_value}")
+    print(f"\nOptimal value (DP): {optimal_value}")
     
     dist_matrix = np.zeros((num_items, num_items))
     for i in range(num_items):
