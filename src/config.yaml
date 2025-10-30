@@ -1,0 +1,27 @@
+# Hydra Configuration for Optimization Algorithms
+# Run with: python main.py
+# Override parameters: python main.py abc.n_solutions=100 hill_climbing.epsilon=1.0
+
+# Common parameters
+common:
+  bounds:
+    - [-20, 20]  # x bounds
+    - [-20, 20]  # y bounds
+  n_dimensions: 2
+
+# ABC Algorithm parameters
+abc:
+  n_solutions: 50        # Number of bees (population size)
+  limit: 100             # Abandonment threshold for Scout Bees
+  max_iter: 200          # Maximum iterations
+
+# Hill Climbing Algorithm parameters
+hill_climbing:
+  epsilon: 0.5           # Step size for neighbor generation
+  n_neighbors: 20        # Number of neighbors to evaluate per step
+  run_limit: 100         # Maximum number of successful jumps
+
+# Output settings
+output:
+  verbose: False
+  print_interval: 10     # Print progress every N iterations
