@@ -11,12 +11,12 @@ This package contains implementations of various optimization and search algorit
 - Graph Search (BFS, DFS, A*)
 """
 
-from .aco import Ant, ACO
-from .abc import run_abc
-from .pso import Particle, PSO
-from .simulated_annealing import SimulatedAnnealing
-from .hill_climbing import steepest_ascent_hill_climbing
-from .search import Node, GraphSearch
+from .swarm_intelligence.aco import Ant, ACO
+from .swarm_intelligence.abc import run_abc
+from .swarm_intelligence.pso import Particle, PSO
+from .traditional_search.simulated_annealing import SimulatedAnnealing
+from .traditional_search.hill_climbing import steepest_ascent_hill_climbing
+from .traditional_search.search import Node, GraphSearch
 
 __all__ = [
     'Ant',
