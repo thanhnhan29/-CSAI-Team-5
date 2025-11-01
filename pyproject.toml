@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csai"
+version = "0.1.0"
+description = "Computer Science AI Algorithms"
+requires-python = ">=3.7"
+
+[tool.setuptools.packages.find]
+where = ["src"]
