@@ -1,4 +1,4 @@
-﻿from RF import RF
+from RF import RF
 
 
 if __name__ == "__main__":

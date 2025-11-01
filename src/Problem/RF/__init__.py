@@ -1,3 +1,3 @@
-﻿from .RF import RF
+from .RF import RF
 
 __all__ = ['RF']
