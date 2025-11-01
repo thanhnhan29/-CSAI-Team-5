@@ -1,5 +1,5 @@
 ﻿from Problem import RF
-from simulated_annealing import SimulatedAnnealing as SA
+from algorithms import SimulatedAnnealing as SA
 import numpy as np
 import matplotlib.pyplot as  plt
 
